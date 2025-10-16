@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	char lowercase[] = "abcdefghijklmnopqrstuvqxyz";
+	char lowercase[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 	/* lowercase loop */
 	for (i = 0; lowercase[i] != '\0'; i++)
