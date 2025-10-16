@@ -18,7 +18,13 @@ int main(void)
 	/* convert to uppercase then splat to screen */
 	for (i = 0; lowercase[i] != '\0'; i++)
 	{
-		putchar(toupper(lowercase[i]));
+		char c = lowercase[i];
+
+		if (c >= 'a' && c <= 'z')
+		{
+			c = c - 32; /* ascii conversion */
+		}
+		putchar(c);
 	}
 	putchar('\n');
 	return (0);
