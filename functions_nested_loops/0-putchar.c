@@ -1,10 +1,13 @@
 #include <stdio.h>
+#include "main.h"
 
 /**
  * main - coreloop
  *
  * Return: always 0 (Success)
  */
+
+
 
 int main(void)
 {
@@ -13,8 +16,8 @@ int main(void)
 
 	for (i = 0; put[i] != '\0'; i++)
 	{
-		putchar(put[i]);
+		printf("%c", put[i]);
 	}
-	putchar('\n');
+	printf("\n");
 	return (0);
 }
