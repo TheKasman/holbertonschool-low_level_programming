@@ -1,0 +1,35 @@
+#include <stdio.h>
+#include "main.h"
+
+void print_alphabet(void);
+
+/**
+ * main - main loop
+ *
+ * Return: always 0 (success)
+ */
+
+int main(void)
+{
+	print_alphabet();
+	return (0);
+}
+
+
+/**
+ * print_alphabet - prints the alphabet in lowercase
+ *
+ * Return: void
+ */
+
+void print_alphabet(void)
+{
+	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
+	int i;
+
+	for (i = 0; i != '\0'; i++)
+	{
+		_putchar(alpha[i]);
+	}
+	_putchar('\n');
+}
