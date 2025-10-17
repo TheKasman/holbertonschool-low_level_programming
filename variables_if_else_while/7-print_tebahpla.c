@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <string.h>
 
 /**
  * main - main loop
@@ -9,13 +8,11 @@
 
 int main(void)
 {
-	char reverse[] = "abcdefghiijklmnopqrstuvwxyz";
-	int i;
-	int alphabet = strlen(reverse);
+	char cha;
 
-	for (i = alphabet - 1 ; i >= 0; i--)
+	for (cha = 'z'; cha >= 'a'; cha--)
 	{
-		putchar(reverse[i]);
+		putchar(cha);
 	}
 	putchar('\n');
 	return (0);
