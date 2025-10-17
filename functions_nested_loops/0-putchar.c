@@ -16,8 +16,8 @@ int main(void)
 
 	for (i = 0; put[i] != '\0'; i++)
 	{
-		printf("%c", put[i]);
+		_putchar(put[i]);
 	}
-	printf("\n");
+	_putchar('\n');
 	return (0);
 }
