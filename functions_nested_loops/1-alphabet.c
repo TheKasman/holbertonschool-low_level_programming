@@ -24,12 +24,11 @@ int main(void)
 
 void print_alphabet(void)
 {
-	char alpha[] = "abcdefghijklmnopqrstuvwxyz";
 	int i;
 
-	for (i = 0; i != '\0'; i++)
+	for (i = 0; i < 26; i++)
 	{
-		_putchar(alpha[i]);
+		_putchar('a' + i);
 	}
 	_putchar('\n');
 }
