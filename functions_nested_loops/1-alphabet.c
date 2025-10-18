@@ -19,15 +19,3 @@ void print_alphabet(void)
 	}
 	_putchar('\n');
 }
-
-/**
- * main - Main loop
- *
- * Return: Always 0 (success)
- */
-
-int main(void)
-{
-	print_alphabet();
-	return (0);
-}
