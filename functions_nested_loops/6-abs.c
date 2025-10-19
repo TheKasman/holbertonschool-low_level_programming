@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include "main.h"
+#include "limits.h"
 
 int _abs(int a);
 
@@ -15,7 +16,7 @@ int _abs(int a)
 	int num;
 	if ( a > '0')
 	{
-		num = '0' + a;
+		num = a * 1;
 		return (num);
 	}
 	else if ( a < '0')
@@ -28,4 +29,19 @@ int _abs(int a)
 		num = '0';
 		return (num);
 	}
+}
+
+int main(void)
+{
+    int r;
+
+    r = _abs(-1);
+    printf("%d\n", r);
+    r = _abs(0);
+    printf("%d\n", r);
+    r = _abs(1);
+    printf("%d\n", r);
+    r = _abs(-98);
+    printf("%d\n", r);
+    return (0);
 }
