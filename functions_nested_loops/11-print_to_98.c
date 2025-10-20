@@ -22,8 +22,13 @@ void print_to_98(int n)
 				int abs_i = -i; /*absolute value of i*/
 
 				_putchar('-');
-
-				if (abs_i >= 10)
+				if (abs_i >= 100)
+				{
+					_putchar('0' + abs_i / 100);
+					_putchar('0' + (abs_i / 10) % 10);
+					_putchar('0' + abs_i % 10);
+				}
+				else if (abs_i >= 10)
 				{
 					_putchar('0' + abs_i / 10);
 					_putchar('0' + abs_i % 10);
