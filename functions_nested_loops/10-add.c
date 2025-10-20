@@ -5,7 +5,8 @@ int add(int, int);
 
 /**
  * add - adds two intervals together
- * @int, @int - add int 1 to int 2
+ * @a: first value to add
+ * @b: second value to be added to a
  * Return: the result of adding them together (result)
  */
 
