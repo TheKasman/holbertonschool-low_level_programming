@@ -20,7 +20,7 @@ void times_table(void)
 		{
 			value = (num1 + i) * (num2 + j);
 
-			if (value >= 10)
+			if (value >= 9)
 			{
 				_putchar('0' + value / 10);
 				_putchar('0' + value % 10);
