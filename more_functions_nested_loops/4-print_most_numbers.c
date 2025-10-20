@@ -4,7 +4,7 @@
 void print_most_numbers(void);
 
 /**
- * print_numbers - prints the numbers from 0-9
+ * print_most_numbers - prints the numbers from 0-9, excluding 2,4
  * Return: void
  */
 
@@ -14,7 +14,7 @@ void print_most_numbers(void)
 
 	for (i = 0; i <= 9; i++)
 	{
-		if(i == 2 || i == 4)
+		if (i == 2 || i == 4)
 		{
 			continue;
 		}
