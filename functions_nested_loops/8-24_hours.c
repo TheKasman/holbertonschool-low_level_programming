@@ -12,13 +12,15 @@ void jack_bauer(void)
 {
 	int i, j, k, l; /* representing time */
 
-	for (l = '0'; l <= '5'; l++) /*10-59 minutes*/
+	for (l = '0'; l < '3'; l++)
 	{
-		for (k = '0'; k <= '9'; k++)/*0-9 minutes*/
+		for (k = '0'; k <= '9'; k++)
 		{
-			for (j = '0'; j < '6'; j++) /*10-59 seconds*/
+			if (l == '2' && k > '3')
+				break; /*stop at 23:59*/
+			for (j = '0'; j < '6'; j++)
 			{
-				for (i = '0'; i <= '9'; i++) /* 0-9 seconds */
+				for (i = '0'; i <= '9'; i++)
 				{
 					_putchar(l);
 					_putchar(k);
