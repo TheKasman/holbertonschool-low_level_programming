@@ -40,3 +40,9 @@ void fizzBuzz(void)
 		}
 	}
 }
+
+int main(void)
+{
+	fizzBuzz();
+	return (0);
+}
