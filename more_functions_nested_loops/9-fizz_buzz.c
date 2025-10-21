@@ -4,8 +4,8 @@
 void fizzBuzz(void);
 
 /**
- * fizzBuzz - Prints numbers from 1-100, changes numbers to Fizz, Buzz or both
- * if divisible by 3, 5 or both.
+ * fizzBuzz - Prints numbers from 1-100, changing to Fizz, buzz, or FizzBuzz
+ *
  * Return: void
  */
 
@@ -17,31 +17,37 @@ void fizzBuzz(void)
 	{
 		if (i % 5 == 0 && i % 3 == 0)
 		{
-			printf("FizzBuzz ");
-			continue;
+			printf("FizzBuzz");
 		}
 
 		else if (i % 3 == 0)
 		{
-			printf("Fizz ");
-			continue;
+			printf("Fizz");
 		}
-
 
 		else if (i % 5 == 0)
 		{
-			printf("Buzz ");
-			continue;
+			printf("Buzz");
 		}
 
 		/*print out numbers (FOR LOOP)*/
 		else
 		{
-			printf("%d ", i);
+			printf("%d", i);
+		}
+
+		if (i != 100)
+		{
+			printf(" ");
 		}
 	}
 	putchar('\n');
 }
+
+/**
+ * main - executes fizzBuzz
+ * Return: Always 0 (success)
+ */
 
 int main(void)
 {
