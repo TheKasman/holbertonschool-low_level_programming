@@ -23,14 +23,14 @@ void print_triangle(int n)
 
 			for (k = 0; k < n - i - 1; k++)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
 			for (j = 0; j <= i; j++)
 			{
-				putchar('#');
+				_putchar('#');
 			}
-			putchar('\n');
+			_putchar('\n');
 		}
-		putchar('\n');
+		_putchar('\n');
 	}
 }
