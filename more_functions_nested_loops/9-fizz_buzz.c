@@ -4,7 +4,8 @@
 void fizzBuzz(void);
 
 /**
- * fizzBuzz - IT'S FIZZBUZZ TIME BABYYYY
+ * fizzBuzz - Prints numbers from 1-100, changes numbers to Fizz, Buzz or both
+ * if divisible by 3, 5 or both.
  * Return: void
  */
 
@@ -39,6 +40,7 @@ void fizzBuzz(void)
 			printf("%d ", i);
 		}
 	}
+	putchar('\n');
 }
 
 int main(void)
