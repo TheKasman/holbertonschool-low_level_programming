@@ -33,9 +33,9 @@ void puts_half(char *str)
 		index = (length + 1) / 2;
 	}
 
-	for (i = 0; i < index; i++)
+	for (i = index; i < length; i++)
 	{
-		_putchar(str[i] + index);
+		_putchar(str[i]);
 	}
 	_putchar('\n');
 }
