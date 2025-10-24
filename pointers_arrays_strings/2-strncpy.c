@@ -22,7 +22,11 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
-	*fused = '\0';
-
+	while (i < n)
+	{
+		*fused = '\0';
+		*fused++;
+		i++;
+	}
 	return (dest);
 }
