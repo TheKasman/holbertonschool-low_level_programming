@@ -36,7 +36,8 @@ char *cap_string(char *c)
 	while (*string)
 	{
 		/*capitalises letter*/
-		if (is_separator(*string) && *string >= 'a' && *string <= 'z')
+		if (is_separator(*string) && *(string + 1) >= 'a'
+				&& *(string + 1) <= 'z')
 		{
 			*string = *string - 32;
 		}
