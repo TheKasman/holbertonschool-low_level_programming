@@ -15,7 +15,7 @@ char *leet(char *c)
 
 	for (i = 0; c[i]; i++)
 	{
-		for (j = 0; j < 12; j++)
+		for (j = 0; j < 10; j++)
 		{
 			if (c[i] == letter[j])
 			{
