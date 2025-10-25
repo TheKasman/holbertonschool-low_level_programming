@@ -25,23 +25,23 @@ int is_separator(char c)
 
 char *cap_string(char *c)
 {
-	char *string = c;
+	char *st = c;
 
 	/*checks for the first letter being lowercase*/
-	if (*string >= 'a' && *string <= 'z')
+	if (*st >= 'a' && *st <= 'z')
 	{
-		*string = *string - 32;
+		*st -= 32;
 	}
 
-	while (*string)
+	while (*st)
 	{
 		/*capitalises letter*/
-		if (is_separator(*string) && *(string + 1) >= 'a'
-				&& *(string + 1) <= 'z')
+		if (is_separator(*st) && *(st + 1) >= 'a'
+				&& *(st + 1) <= 'z')
 		{
-			*string -= 32;
+			*(st + 1) -= 32;
 		}
-		string++;
+		st++;
 	}
 	return (c);
 }
