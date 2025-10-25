@@ -39,7 +39,7 @@ char *cap_string(char *c)
 		if (is_separator(*string) && *(string + 1) >= 'a'
 				&& *(string + 1) <= 'z')
 		{
-			*string = *string - 32;
+			*string -= 32;
 		}
 		string++;
 	}
