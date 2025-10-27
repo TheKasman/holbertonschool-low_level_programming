@@ -9,6 +9,7 @@
 
 void _puts_recursion(char *s)
 {
+	/*hi*/
 	if (*s == '\0')
 	{
 		return;
