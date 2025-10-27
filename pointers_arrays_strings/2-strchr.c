@@ -14,11 +14,17 @@ char *_strchr(char *s, char c)
 
 	while (*string)
 	{
-		if (*string == c || *string == '\0') /*i found it!!?!??!*/
+		if (*string == c) /*i found it!!?!??!*/
 		{
 			return (string);
 		}
 		string++;
 	}
+
+	if (c == '\0')
+	{
+		return s;
+	}
+
 	return (NULL);
 }
