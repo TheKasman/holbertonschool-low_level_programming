@@ -11,7 +11,7 @@ int is_number(const char *s)
 {
 	if (*s == '-' || *s == '+')
 		s++;
-	if (!*s)
+	if (!*s) /*empty string check*/
 		return (0);
 
 	while (*s)
@@ -40,7 +40,7 @@ int main(int argc, char *argv[])
 	if (argc <= 1)
 	{
 		printf("0\n");
-		return (1);
+		return (0);
 	}
 
 	for (i = 1; argv[i]; i++)
