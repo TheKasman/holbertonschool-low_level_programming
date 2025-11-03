@@ -5,7 +5,7 @@
 /**
  * *_strdup - returns a pointer of a duplicated string
  * @str: the string
- * Returns: Null if it's null, returns pointer to the duplicated string
+ * Return: Null if it's null, returns pointer to the duplicated string
  */
 
 char *_strdup(char *str)
@@ -21,7 +21,7 @@ char *_strdup(char *str)
 
 	for (j = 0; j < str[j]; j++)
 	{
-	}/*we'll use J in a second.*/
+	} /*we'll use J in a second.*/
 
 	/*memory allocation for copy... THERE'S J :P*/
 	copy = malloc(j + 1);
