@@ -24,7 +24,12 @@ char *_strdup(char *str)
 	}/*we'll use J in a second.*/
 
 	/*memory allocation for copy... THERE'S J :P*/
-	copy = (char *)malloc(j + 1);
+	copy = malloc(j + 1);
+
+	if (copy == NULL)
+	{
+		return (NULL);
+	}
 
 	/*no garbage text*/
 	for (i = 0; str[i]; i++)
