@@ -10,7 +10,7 @@
 
 char *_strdup(char *str)
 {
-	int i;
+	int i, j;
 	char *copy;
 
 	/*check for null*/
@@ -18,8 +18,13 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	/*memory allocation for copy*/
-	copy = (char *)malloc(strlen(str) + 1);
+
+	for (j = 0; j < str[j]; j++)
+	{
+	}/*we'll use J in a second.*/
+
+	/*memory allocation for copy... THERE'S J :P*/
+	copy = (char *)malloc(j + 1);
 
 	/*no garbage text*/
 	for (i = 0; str[i]; i++)
