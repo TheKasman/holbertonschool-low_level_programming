@@ -17,7 +17,6 @@ void *malloc_checked(unsigned int b)
 
 	if (check == NULL)
 	{
-		printf("Malloc failed for %u bytes", b);
 		exit(98);
 	}
 
