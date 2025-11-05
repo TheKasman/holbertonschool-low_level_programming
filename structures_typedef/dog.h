@@ -10,6 +10,7 @@
  * @age: doggo age
  * @owner: doggo's handler
  * Description: A struct to make a doggo!
+ * Typedef: dog_t is an alias for the struct
  */
 
 struct dog
