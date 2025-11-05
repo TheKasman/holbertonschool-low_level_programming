@@ -13,7 +13,7 @@
  * Typedef: dog_t is an alias for the struct
  */
 
-struct dog
+typedef struct dog
 {
 	char *name;
 	float age;
