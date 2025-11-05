@@ -22,7 +22,8 @@ void *_calloc(unsigned int nmemb, unsigned int size)
 
 	/*print garbage*/
 	memory = malloc(nmemb * size);
-
+	if (memory == NULL)
+		return (NULL);
 	/*cast void* as char* */
 	zerome = memory;
 
