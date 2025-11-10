@@ -20,8 +20,9 @@ int int_index(int *array, int size, int (*cmp)(int))
 	/*time to search!*/
 	for (search_index = 0; search_index < size; search_index++)
 	{
-		cmp(array[search_index]);
+		if (cmp(array[search_index]))
+			return (search_index);
 	}
 
-	return (search_index);
+	return (-1);
 }
