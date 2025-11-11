@@ -23,7 +23,7 @@ int main(int argc, char *argv[])
 	a = atoi(argv[1]);
 	b = atoi(argv[3]);
 
-	funk = get_op_func(argv[2]);
+	funk = (argv[2][1] == '\0') ? get_op_func(argv[2]) : NULL;
 
 	if (funk == NULL)
 	{
