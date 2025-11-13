@@ -58,37 +58,43 @@ void print_string(va_list *args)
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, printed = 0;
+	int i = 0, j, printed = 0;
 	va_list args;
+	const char t_arg[] = "cifs";
 
 	va_start(args, format);
-
 	while (format && format[i])
 	{
-		if (printed &&
-		(format[i] == 'c' || format[i] == 'i' ||
-		 format[i] == 'f' || format[i] == 's'))
-			printf(", ");
-
-		switch (format[i])
+		j = 0;
+		while (t_arg[j])
 		{
-			default:
+			if (format[i] == t_arg[j] && printed)
+			{
+				printf(", ");
 				break;
-			case 'c':
-				print_char(&args);
-				break;
-			case 'i':
-				print_int(&args);
-				break;
-			case 'f':
-				print_float(&args);
-				break;
-			case 's':
-				print_string(&args);
-				break;
-		}
-
-		i++;
+			}
+			switch (format[i])
+			{
+				default:
+					break;
+				case 'c':
+					print_char(&args);
+					printed = 1;
+					break;
+				case 'i':
+					print_int(&args);
+					printed = 1;
+					break;
+				case 'f':
+					print_float(&args);
+					printed = 1;
+					break;
+				case 's':
+					print_string(&args);
+					printed = 1;
+					break;
+			}	j++;
+		}	i++;
 	}
 	printf("\n");
 	va_end(args);
