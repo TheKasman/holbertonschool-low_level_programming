@@ -41,9 +41,11 @@ void print_string(va_list *args)
 	char *str = va_arg(*args, char *);
 
 	if (str != NULL)
+	{
 		printf("%s", str);
-	if (str == NULL)
-		printf("(nil)");
+		return;
+	}
+	printf("(nil)");
 }
 
 
@@ -56,13 +58,16 @@ void print_string(va_list *args)
 
 void print_all(const char * const format, ...)
 {
-	int i = 0;
+	int i = 0, printed = 0;
 	va_list args;
 
 	va_start(args, format);
 
-	while (format[i])
+	while (format && format[i])
 	{
+		if (printed)
+			printf(", ");
+
 		switch (format[i])
 		{
 			default:
