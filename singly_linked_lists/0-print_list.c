@@ -1,6 +1,7 @@
 #include "lists.h"
 
-/** print_list - prints the list
+/**
+ * print_list - prints the list
  * @h: the list
  * Return: Returns the list..?
  */
