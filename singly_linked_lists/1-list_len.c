@@ -8,16 +8,12 @@
 
 size_t list_len(const list_t *h)
 {
-	unsigned int count;
+	size_t count = 0;
 
-	if (h == NULL)
-	{
-
-	}
-
-	while (h->len != NULL)
+	while (h != NULL)
 	{
 		h = h->next;
+		count++;
 	}
-	return (count)
+	return (count);
 }
