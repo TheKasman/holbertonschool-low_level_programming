@@ -3,7 +3,7 @@
 /**
  * *get_dnodeint_at_index - gets the node at the index
  * @head: the head
- * index: the index we're looking for
+ * @index: the index we're looking for
  * Return: Returns the value from the node
  */
 
