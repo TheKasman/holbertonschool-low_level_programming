@@ -11,10 +11,12 @@
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	int i;
+	unsigned int i;
 
 	/*node creation*/
-	dlistint_t *node = add_dnodeint(h, n);
+	dlistint_t *node, *current;
+
+	node = add_dnodeint(h, n);
 
 	/*our head check*/
 	if (idx == 0)
@@ -29,7 +31,7 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	}
 
 	/*our temp value*/
-	dlistint_t *current = *h;
+	current = *h;
 
 	/*find the previous node before the insertion point*/
 	for (i = 0; i < idx - 1 && current != NULL; ++i)
